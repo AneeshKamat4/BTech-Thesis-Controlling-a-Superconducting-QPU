@@ -1,2 +1,10 @@
 # BTech-Thesis-Controlling-a-Superconducting-QPU
-My Bachelor's Thesis on the Automation and Control of a Superconducting Quantum Processor, for which I was conferred the Undergraduate Research Award at IIT Bombay in 2023.
+My Bachelor's Thesis on the Automation and Control of a Superconducting Quantum Processor, for which I was conferred the Undergraduate Research Award at IIT Bombay in 2023. All work was conducted at the Quantum Measurement and Control laboratory at TIFR, Mumbai under the guidance of Professor Rajamani Vijayaraghavan.
+
+This thesis outlines a protocol to tune up a superconducting quantum processor in an automated manner with minimal human operator input. The work conducted in this thesis was carried out on fixed-frequency transmon qubits, as part of a collaborative effort between TIFR, DRDO and TCS to develop India’s first quantum computer, a 7-qubit processor accessible to scientists via the cloud in a manner akin to IBM’s extremely successful IBMQ platform. Such an effort necessitates a capability to characterize, calibrate and control qubits in an automated manner, while also executing a periodic retuning of critical configuration parameters, to maximise the up-time of the quantum processor, and minimize human operator resources.
+
+I present an automated spectroscopy code to characterize the qubits using microwave control lines with a custom SNR detector that allows efficient ensemble averaging. We demonstrate the ALLXY error diagnostic tool to benchmark gate performance and measure robustness. This is extended to an experimental calibration of DRAG pulses to address the issue of state
+leakage out of the qubit computational basis. We implement an autonomous closed-loop amplitude calibration of π and π/2 pulses using the ORBIT fidelity measure, achieving Randomized Benchmarking fidelities at par with manually calibrated pulses using the resource-expensive Power Rabi experiment. 
+
+All the above additions to the experimental suite for qubit tune-up are developed in the Quantum Universal Assembly (QUA) language in a scalable manner that can simultaneously extend to all the qubits in the quantum processor unit. They are integrated with industry-standard techniques such as Rabi, Ramsey, Randomized Benchmarking and Coherence experiments to
+demonstrate cool-down to coherence with minimal human operator oversight.
